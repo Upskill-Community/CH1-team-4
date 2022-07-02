@@ -425,3 +425,75 @@ section .hero-section{
     transition: transform .5s ease-in-out;
 } */
 /* Franklin CSS ends here*/
+
+/*Emerie's part starts here*/
+.footer2 {
+    background-color: hsl(233, 12%, 13%);
+    height: 150px;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
+.footer-menu {
+    width: 25%;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: hsl(12, 88%, 59%);
+}
+
+.footer-socials-div a:hover{
+    color: hsl(12, 88%, 59%);
+}
+
+.footer-menu1 {
+    margin-left: 100px;
+}
+
+
+
+.footer2 li {
+    list-style: none;
+    margin: 0 0 10px 0; 
+}
+
+.footer-form input{
+    height: 30px;
+    width: 230px;
+    border-radius: 16px;
+    text-align: left;
+    border: none;
+    padding: 3px;
+}
+
+
+.footer-form .button {
+    background: hsl(12, 88%, 59%);
+    color: #fff;
+    height: 30px;
+    width: 60px;
+    border-radius: 16px;
+    border: none;
+}
+
+.footer-socials-div {
+    margin-top: 60px;
+}
+
+.footer-form h6 {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.social-icon {
+    margin: 3px;
+}
+/*Emerie's part ends here*/
