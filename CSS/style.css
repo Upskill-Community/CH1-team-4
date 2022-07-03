@@ -558,13 +558,13 @@ body {
     padding: 24px 0;
 }
 
-p {
+ .xpara {
     color: white;
     font-weight: 600;
     font-size: 1.4em;
 }
 
-button {
+.get_button {
     color: #ff6308;
     padding: 8px 16px;
     background-color: white;
@@ -625,7 +625,7 @@ button {
         display: none;
     }
 
-    button {
+    .get_button {
         font-weight: 600;
     }
 
