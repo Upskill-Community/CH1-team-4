@@ -740,13 +740,15 @@ section .hero-section{
     padding: 24px 0;
 }
 
-p {
+ .xpara {
     color: white;
     font-weight: 600;
     font-size: 1.4em;
 }
 
+completedbranch
 .bottomButton {
+
     color: #ff6308;
     padding: 1rem 2rem;
     background-color: white;
@@ -861,7 +863,7 @@ p {
         display: none;
     }
 
-    button {
+    .get_button {
         font-weight: 600;
     }
 
