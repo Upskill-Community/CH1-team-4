@@ -2,11 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Be Vietnam Pro';
 }
 
 html, body{
     overflow-x: hidden;
+    /* position: relative; */
+    width: 100%;
+}
+
+.color-overlay1{
+    background: url('../images/mysec-bg.svg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+    position : absolute;
+    /* display: flex; */
+    width: 50%;
+    height: 50%;
+    top:0;
+    right: -100px;
+    z-index: 1;
+    transform: rotate(180deg);
+    /* opacity: 0.1; */
+}
+
+.hero-right{
+    z-index: 2;
+    position: relative;
 }
 
 /*Favours part starts here*/
@@ -49,6 +71,8 @@ html, body{
 .section-four .part-two .people .info{
     text-align: center;
     font-size: 13px;
+    color:hsl(0, 0%, 54%);
+    font-weight: 400;
     /* width: 350px; */
 }
  
@@ -95,6 +119,59 @@ html, body{
 }
 /*Favours part ends here*/
 
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.third{
+    width: 40%;
+    padding: 3rem 0 0 5rem;
+}
+
+.third1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.fourth{
+    width:40%;
+}
+.bullet{
+    float: left;
+    margin-left: -60px;
+    width: 50px;
+    height: 30px;
+    background-color: #f25f3a;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    color:  hsl(0, 0%, 98%);
+    
+}
+
+.fourth{
+    padding: 3rem 5rem 0 0;
+}
+
+.bulletheader{
+    font-weight: 700;
+    color: hsl(233, 12%, 13%);
+    margin: 1rem 0;
+}
+
+.fourth1, .fourth2, .fourth3{
+    margin:2rem 0;
+}
+
+.secondSectionTexts{
+    color:hsl(0, 0%, 69%);
+    font-weight: 400;
+    font-size: 14px;
+}
 /*Franklin parts starts here*/
 *,
 *::before,
@@ -106,6 +183,8 @@ html, body{
 .logo img{
     width: 150px;
 }
+
+header
 
 nav{
     display: flex;
@@ -150,24 +229,24 @@ nav{
     display: none;
 }
 header{
-    background:  hsl(0, 0%, 98%);
+    /* background:  hsl(0, 0%, 98%); */
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
-    
+    position: relative;
+    z-index: 1;
 }
 section .hero-section{
 /*    font-family: 'Lobster', cursive;*/
     font-family: 'Be Vietnam Pro', sans-serif;
     padding: 1.5em;
-    background:  hsl(0, 0%, 98%);
+    /* background:  hsl(0, 0%, 98%); */
     height: 100%;
 }
+
 .hero-section img{
     width: 80%;
     margin-top: 5em;
-
-
 }
 
 .hero-p{
@@ -176,20 +255,21 @@ section .hero-section{
     line-height: 25px;
     color:  hsl(227, 12%, 61%);
     margin: .3em;
-
 }
+
 .hero-heading{
   padding-top: 3em;
     font-size: 2.5em;
     width: 350px;
     font-weight: 700;
     color:#242D52;
-    padding-bottom: 1em;
-    
+    padding-bottom: 1em; 
 }
+
 .hero-left{
     padding: 1.5em;
 }
+
 .hero-section{
  text-align: left;
 }
@@ -198,6 +278,7 @@ section .hero-section{
     justify-content: space-around;
     margin-top: 2.7em;
 }
+
 .hero-button{
     padding: 12px 20px;
     border: none;
@@ -210,6 +291,7 @@ section .hero-section{
     margin: .5em;
     cursor:pointer;
 }
+
 .hero-button:hover{
     opacity: .9;
     box-shadow: 0 10px 15px rgba(65, 65, 65, 0.61);
@@ -218,6 +300,30 @@ section .hero-section{
 .closeNav{
     display: none;
 }
+
+.footer2{
+    padding: 40px !important;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 18rem;
+}
+
+.copy-right-bottom{
+    display: none;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.footer-socials-div {
+    margin-top: 60px !important;
+}
+
 @media only screen and (max-width:768px) and (min-width:481px) {
    
     nav {
@@ -226,6 +332,7 @@ section .hero-section{
         padding: 1.5em;
         margin-top: 10px;
     }
+
     header{
         width: 100%;
     }
@@ -243,18 +350,19 @@ section .hero-section{
     .nav-links{
         position: absolute;
         margin: 0 auto;
-        /* left: 0; */
+        left: 50%;
         text-align: center;
-        width: 50%;
+        width: 70%;
         border-radius: 10px;
         padding: 1rem;
         right: 0;
         transform: translate(-50%, -50%);
-        background-color: rgba(12, 11, 11, 0.932);
+        background-color: rgb(255, 255, 255);
         flex-direction: column;
-        z-index: 1;
+        z-index: 10;
         top: -200px;
         transition: .5s;
+        box-shadow: 0px 20px 50px rgb(121, 121, 121);
         /* padding:5%;
         background-color: rgba(12, 11, 11, 0.932);
         color: white;
@@ -276,11 +384,10 @@ section .hero-section{
         cursor: pointer;
     }
     .nav-links li a{
-        color: rgba(211, 207, 207, 0.918);
+        color: rgba(27, 27, 27, 0.918);
     }
  
     .hero-container{
-        
         text-align: center;
         flex-direction: column-reverse;
     }
@@ -296,10 +403,12 @@ section .hero-section{
         margin: 0 auto;
         padding-top: 0em;
     }
+
+
     .hero-img{
         margin-bottom: .9rem;
         margin-top: -3em;
-        
+
     }
   
     .section-four .part-two .people{
@@ -319,6 +428,70 @@ section .hero-section{
         width: 100%;
         margin: 0 auto;
     }
+
+    .bullet{
+        float: left;
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .fourth{
+        padding: 1rem 0 0 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .third{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3rem 0 0 0;
+        text-align: center;
+    }
+
+    .bulletheader{
+        background-color: #FFF0EC;
+        padding: 5px;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .footer2{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding-bottom: 1rem !important;
+    }
+
+    .footer-logo{
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-menu{
+        display: flex;
+        gap: 10rem;
+        padding: 1rem 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .copy-right{
+        position: absolute;
+        bottom: 0px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+
 }
 @media only screen and (max-width:481px) and (min-width:320px) {
    
@@ -326,9 +499,7 @@ section .hero-section{
         position: relative;
         justify-content: space-between;
         padding: 1em;
-        
     }
-
    
     .nav_btn button{
         display: none;
@@ -339,20 +510,17 @@ section .hero-section{
     .nav-links{
         position: absolute;
         margin: 0 auto;
-        /* left: 0; */
         text-align: center;
         width: 50%;
         border-radius: 10px;
         padding: 1rem;
         right: 0;
         transform: translate(-50%, -50%);
-        background-color: rgba(12, 11, 11, 0.932);
         flex-direction: column;
         z-index: 1;
         top: -200px;
         transition: .5s;
         /* padding:5%;
-        background-color: rgba(12, 11, 11, 0.932);
         color: white;
         width: 50%;
         margin-top: 5%;
@@ -364,50 +532,73 @@ section .hero-section{
         transform: translateY(-390px);
         text-align: center;
         transition: transform 1s ease-in; */
-
     }
     .ham-buger{
         display: block;
         cursor: pointer;
     }
+
     .nav-links li a{
         color: rgba(211, 207, 207, 0.918);
     }
  
     .hero-container{
-        
         text-align: center;
         flex-direction: column-reverse;
     }
+
     .hero-p{
         width: 300px;
         letter-spacing: 1px;
         padding: 14px;
         margin: 0 auto;
-
     }
+
     .hero-heading{
         width: 300px;
         margin: 0 auto;
         padding-top: 0em;
     }
+
     .hero-img{
         margin-bottom: .9rem;
         margin-top: -3em;
-        
+    }
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .fourth{
+        padding: 1rem 0 0 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .third{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3rem 0 0 0;
+        text-align: center;
+    }
+
+    .bullet{
+        float: left;
+        margin-left: 0;
+        margin-right: 1rem;
     }
   
     .section-four .part-two .people{
         background: hsl(0, 0%, 98%);
         width:100%;
         height: 100%;
-     
-    
         padding: 35px;
-      
         flex-direction: column;
         font-weight: 500;
-      
     }
     
     .section-four .part-two .people .info{
@@ -429,16 +620,15 @@ section .hero-section{
 /*Emerie's part starts here*/
 .footer2 {
     background-color: hsl(233, 12%, 13%);
-    height: 150px;
+    /* height: 150px; */
     display: flex;
-    padding-top: 30px;
-    justify-content: center;
+    padding: 30px;
+    justify-content: space-between;
     color: white;
     width: 100%;
-}
-
-.footer-menu {
-    width: 25%;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
 }
 
 .footer-menu a {
@@ -454,15 +644,18 @@ section .hero-section{
     color: hsl(12, 88%, 59%);
 }
 
-.footer-menu1 {
+/* .footer-menu1 {
     margin-left: 100px;
-}
-
-
+} */
 
 .footer2 li {
     list-style: none;
     margin: 0 0 10px 0; 
+}
+
+.footer-form{
+    text-align: center;
+    /* display: block !important; */
 }
 
 .footer-form input{
@@ -474,7 +667,6 @@ section .hero-section{
     padding: 3px;
 }
 
-
 .footer-form .button {
     background: hsl(12, 88%, 59%);
     color: #fff;
@@ -485,12 +677,12 @@ section .hero-section{
 }
 
 .footer-socials-div {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .footer-form h6 {
     margin-top: 30px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 
 .social-icon {
@@ -500,24 +692,14 @@ section .hero-section{
 
 /* Sthink Section */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x :hidden;
-    width: 100%;
-}
-
  .sec_four{
     background: #ff4213;
     width: 100%;
-    height: 120px;
+    /* height: 120px; */
     position: relative;
     margin-top: 50px;
-    box-sizing: border-box;
+    /* padding-top: 1rem; */
+    padding-bottom: 1rem;
 }
 
 .p_two {
@@ -564,22 +746,76 @@ body {
     font-size: 1.4em;
 }
 
-.get_button {
+completedbranch
+.bottomButton {
+
     color: #ff6308;
-    padding: 8px 16px;
+    padding: 1rem 2rem;
     background-color: white;
-    border-radius: 16px;
+    border-radius: 50px;
     outline: none;
     border: none;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 500;
+    margin-top: 1.5rem;
 }
 
-/* @media  (min-width : 375px) {
+@media only screen and (max-width:768px) and (min-width:481px){
+    .all {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: space-between;
+        align-items: center;
+        height : auto;
+        width: 80%;
+        z-index: 50;
+        margin: auto;
+    }
 
-} */
+    .p_one {
+        display: none;
+    }
 
-@media (max-width: 768px){
+    .p_two {
+        display: flex;
+        width: 90%;
+        margin: 12px auto 24px auto;
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+
+    .sec_four{
+        width: 100%;
+        /* height: 220px; */
+        position: relative;
+        margin-top: 32px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .color-overlay {
+        background: url('../images/mysec-bg.svg') no-repeat ;
+        background-size: 55% auto;
+        background-position: -100% -5%;
+        position : absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+     }
+
+    .color-over_sec {
+        display: none;
+    }
+
+    button {
+        font-weight: 600;
+    }
+
+}
+
+@media only screen and (max-width:481px) and (min-width:320px) {
     .all {
         display: flex;
         flex-flow: column-reverse nowrap;
@@ -605,9 +841,11 @@ body {
 
     .sec_four{
         width: 100%;
-        height: 220px;
+        /* height: 220px; */
         position: relative;
         margin-top: 32px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .color-overlay {
