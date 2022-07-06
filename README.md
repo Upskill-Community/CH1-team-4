@@ -20,7 +20,7 @@ General overview/description of project
 https://t.co/ElHoepJZwc
 
 ## Screenshot
-
+https://github.com/Upskill-Community/CH1-team-4/blob/main/design/desktop-design.jpg
 
 ## Links
 * Live Site URL: https://upskillch1team4.netlify.app/
